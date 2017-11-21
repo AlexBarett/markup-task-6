@@ -1,62 +1,99 @@
 main
 {
+    font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 3;
-    grid-gap: 10px;
-    grid-column: 4;
+    grid-template-rows: 60px auto auto auto auto;
+    grid-template-columns: auto 15% 15% 15% 30%;
+    grid-gap: 10px 30px;
     grid-auto-rows: minmax(100px, auto);
 }
 
 .logo
 {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .news
 {
     grid-column: 2 / 4;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .disk
 {
     grid-column: 4;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .finder
 {
     grid-column: 2 / 5;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .advertising
 {
-    grid-column: 2 / 5 ;
-    grid-row: 3;
+    grid-column: 2 / 4 ;
+    grid-row: 4;
 }
 
 .visited
 {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 5 / 7;
 }
 
 .humor
 {
     grid-column: 2;
-    grid-row: 5;
+    grid-row: 7 / 9;
 }
 
 .tv
 {
     grid-column: 3;
-    grid-row: 4;
+    grid-row: 5 / 7;
+}
+
+.weather
+{
+    grid-column: 4;
+    grid-row: 5;
+}
+
+.jam
+{
+    grid-column: 4;
+    grid-row: 6;
+}
+
+.map
+{
+    grid-column: 4;
+    grid-row: 7;
+}
+
+.poster
+{
+    grid-column: 4;
+    grid-row: 8;
+}
+
+.auto
+{
+    grid-column: 3;
+    grid-row: 7 / 9;
+}
+
+.search
+{
+    margin-top: 4px;
 }
 
 .finder input
 {
+    margin-top: 5px;
     width: 80%;
     font-size: 150%;
     border: 2px solid #ffdb4d;
@@ -64,26 +101,157 @@ main
 
 .finder button
 {
-    margin-left: -4px;
+    margin-left: -5px;
     font-size: 150%;
     border: 2px solid #ffdb4d;
     background-color: #ffdb4d;
 }
 
+.news_list
+{
+    margin-left: -20px;
+}
+
 .news a
 {
-    margin-left: 20px;
     font-size: 125%;
     text-decoration: none;
 }
 
-.tv_list
+.poster_list,
+.tv_list,
+.auto_list
 {
     list-style-type: none;
-    margin-left: -20px;
 }
 
-.tv a
+.logo img
 {
-    margin-left: 20px;
+    margin-top: -15px;
+    float: right;
+}
+
+.cloud
+{
+    width: 10%;
+}
+
+.auto_list
+{
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 4px -4px #000 inset, 0 -4px 4px -4px #000 inset;
+}
+
+.visit a,
+.map span ~ a,
+.map span a
+{
+    text-decoration: none;
+    font-size: 90%;
+    color: #000;
+}
+
+.visit a:first-of-type
+{
+    font-weight: bold;
+}
+
+.auto_list li,
+.poster_list li,
+.tv_list li
+{
+    margin-left: -30px;
+    font-size: 80%;
+}
+
+.auto_list::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.yandex_link,
+.yandex_header
+{
+    text-decoration: none;
+}
+
+.example
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.date,
+.change,
+.genre,
+.example,
+.channel
+{
+    font-weight: normal;
+    font-size: 80%;
+    opacity: .7;
+}
+
+.money
+{
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.yandex_header
+{
+    font-size: 120%;
+}
+
+.fun_1,
+.fun_2,
+.fun_3,
+.fun_4
+{
+    display: none;
+}
+
+.fun_1:not(:checked) ~ main > .humor > .joke1,
+.fun_2:not(:checked) ~ main > .humor > .joke2,
+.fun_3:not(:checked) ~ main > .humor > .joke3,
+.fun_4:not(:checked) ~ main > .humor > .joke4,
+.fun_1:not(:checked) ~ main > .humor > .swap_1,
+.fun_2:not(:checked) ~ main > .humor > .swap_2,
+.fun_3:not(:checked) ~ main > .humor > .swap_3,
+.fun_4:not(:checked) ~ main > .humor > .swap_4
+{
+    display: none;
+}
+
+.fun_1:checked ~ main > .humor > .joke1,
+.fun_2:checked ~ main > .humor > .joke2,
+.fun_3:checked ~ main > .humor > .joke3,
+.fun_4:checked ~ main > .humor > .joke4,
+.fun_1:checked ~ main > .humor > .swap_1,
+.fun_2:checked ~ main > .humor > .swap_2,
+.fun_3:checked ~ main > .humor > .swap_3,
+.fun_4:checked ~ main > .humor > .swap_4
+{
+    display: block;
+}
+
+.swap_1,
+.swap_2,
+.swap_3,
+.swap_4
+{
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.disk figure img
+{
+    width: 100%;
+    vertical-align: top;
+}
+
+.disk figcaption
+{
+    font-size: 75%;
 }

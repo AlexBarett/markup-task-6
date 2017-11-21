@@ -9,7 +9,10 @@
     <aside>
         Екатеринбург
     </aside>
-
+    <input type="radio" name="fun" class="fun_1" id="joke_1" checked>
+    <input type="radio" name="fun" class="fun_2" id="joke_2">
+    <input type="radio" name="fun" class="fun_3" id="joke_3">
+    <input type="radio" name="fun" class="fun_4" id="joke_4">
     <main>
         <section class="logo">
             <img src="logo.svg" alt="Яндекс">
@@ -20,16 +23,28 @@
             <span class="date">
                 21 ноября, вторник 24:05 
             </span>
-            <ul>
+            <ul class="news_list">
                 <li>новость раз</li>
                 <li>новость два</li>
                 <li>новость три</li>
                 <li>новость четыре</li>
                 <li>новость пять</li>
             </ul>
+            <div class="money">
+                USD ЦБ 50,50 <span class="change">-0.10</span> 
+                EUR ЦБ 60,60 <span class="change">-0.20</span> 
+                НЕФТЬ 56,65 <span class="change">-0.21%</span>
+            </div>
         </section>
         <section class="disk">
-            диск. яндекс диск.
+            <a href="" class="yandex_link">
+                <figure>
+                    <img src="YandexDisk.png" alt="яндекс диск">
+                    <figcaption>
+                        Диск. Яндекс диск.
+                    </figcaption>
+                </figure>
+            </a>
         </section>
         <section class="finder">
             <a href="" class="yandex_link">Видео</a>
@@ -45,15 +60,17 @@
             <button>
                 Найти
             </button>
-            <br>
-            <span>Найдется все. Например,</span>
-            <a href="" class="example">Ничего</a>
+                <br>
+                <div class="search">
+                <span>Найдется все. Например,</span>
+                <a href="" class="example">Ничего</a>
+            </div>
         </section>
         <section class="advertising">
             <img src="1.png" alt="Купи ладу">
         </section>
         <section class="visited">
-            <a href="" class="yandex_link">Посещаемое</a>
+            <a href="" class="yandex_header">Посещаемое</a>
             <div class="visit">
                 <a href="">Маркет</a>
                 -
@@ -86,51 +103,176 @@
             </div>
         </section>
         <section class="humor">
-            смищьной анекдот
+            <a href="" class="yandex_header">Анекдоты</a>
+            <br>
+            <br>
+            <div class="joke1">
+                смищьной анекдот
+            </div>
+            <div class="joke2">
+                другой смищьной анекдот
+            </div>
+            <div class="joke3">
+                еще один смищьной анекдот
+            </div>
+            <div class="joke4">
+                и еще один
+            </div>
+            <br>
+            <br>
+            <label for="joke_2" class="swap_1">
+                Следующий
+            </label>
+            <label for="joke_3" class="swap_2">
+                Следующий  
+            </label>
+            <label for="joke_4" class="swap_3">
+                Следующий  
+            </label>
+            <label for="joke_1" class="swap_4">
+                В начало 
+            </label>
         </section>
         <section class="tv">
-            <a href="" class="yandex_link">Телепрограмма</a>
+            <a href="" class="yandex_header">Телепрограмма</a>
             <ul class="tv_list">
                 <li>
-                11:00
-                Давай разведёмся! 41 Домашний
+                    <span class="date">11:00</span>
+                    Давай разведёмся! <span class="channel">41 Домашний</span>
                 </li>
                 <li>
-                11:10
-                Улицы разбитых… Пятый канал
+                    <span class="date">11:10</span>
+                    Улицы разбитых… <span class="channel">Пятый канал</span>
                 </li>
                 <li>
-                11:20
-                Подозреваются все НТВ
+                    <span class="date">11:20</span>
+                    Подозреваются все <span class="channel">НТВ</span>
                 </li>
                 <li>
-                11:30
-                События ТВ Центр
+                    <span class="date">11:30</span>
+                    События <span class="channel">ТВ Центр</span>
                 </li>
                 <li>
-                11:30
-                Не ври мне! ТВ-3
+                    <span class="date">11:30</span>
+                    Не ври мне! <span class="channel">ТВ-3</span>
                 </li>
                 <li>
-                11:40
-                Вести Урал Россия 1
+                    <span class="date">11:40</span>
+                    Вести Урал <span class="channel">Россия 1</span>
                 </li>
             </ul>
         </section>
         <section class="auto">
-
+            <a href="" class="yandex_header">Автоновости</a>
+            <ul class="auto_list">
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+                <li>
+                    все тихо
+                </li>
+            </ul>
         </section>
         <section class="weather">
-
+            <a href="" class="yandex_header">Погода
+                <img class="cloud" src="weather.svg" alt="облако">
+            </a>
+            <br>
+            <br>
+            -2 &deg;C
+            <br>
+            Вечер -5, ночь -7
         </section>
         <section class="jam">
-
+            <a href="" class="yandex_header">Пробки</a>
+            <br>
+            <br>
+            4 балла
+            <br>
+            Местами затруднения
         </section>
         <section class="map">
-
+            <a href="" class="yandex_header">Карта Екатеринбурга</a>
+            <br>
+            <br>
+            <br>
+            <span>
+                <a href="">Такси</a>
+                <a href="">Расписания</a>
+            </span>
+            <br>
+            <a href="">Междугородные автобусы</a>
         </section>
         <section class="poster">
-
+            <a href="" class="yandex_header">Афиша</a>
+            <ul class="poster_list">
+                <li>
+                    Тайна Кокопремьера <span class="genre">в чт</span>
+                </li>
+                <li>
+                    Тор: Рагнарёк <span class="genre">фэнтези</span>
+                </li>
+                <li>
+                    Лига справедливости <span class="genre">фантастика</span>
+                </li>
+                <li>
+                    Убийство в Восточном… <span class="genre">драма</span>
+                </li>
+                <li>
+                    Последний богатырь <span class="genre">приключения</span>
+                </li>
+            </ul>
         </section>
     </main>
 </body>
