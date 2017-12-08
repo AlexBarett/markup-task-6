@@ -91,6 +91,7 @@ main
 
 .finder input
 {
+    height: 30px;
     margin-top: 5px;
     width: 80%;
     font-size: 150%;
@@ -99,9 +100,10 @@ main
 
 .finder button
 {
+    height: 36px;
     margin-left: -5px;
     font-size: 150%;
-    border: 2px solid #ffdb4d;
+    border: 3px solid #ffdb4d;
     background-color: #ffdb4d;
 }
 
@@ -307,9 +309,9 @@ main
     right: 5px;
     bottom: 8px;
     font-size: 0;
-    border-top: 17px solid transparent;
+    border-top: 18px solid transparent;
     border-left: 11px solid #ffdb4d;
-    border-bottom: 17px solid transparent;
+    border-bottom: 18px solid transparent;
 }
 
 .auto_list,
